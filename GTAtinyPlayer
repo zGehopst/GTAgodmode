@@ -1,0 +1,12 @@
+bool tinyplayer = false;
+void TinyPlayer()
+{
+	if (tinyplayer)
+	{
+		PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 223, true);
+	}
+	else
+	{
+		PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 223, false);
+	}
+}
