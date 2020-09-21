@@ -1,0 +1,12 @@
+bool godmode = false;
+void Godmode()
+{
+	if (godmode)
+	{
+		ENTITY::SET_ENTITY_INVINCIBLE(PLAYER::PLAYER_PED_ID(), true);
+	}
+	else
+	{
+		ENTITY::SET_ENTITY_INVINCIBLE(PLAYER::PLAYER_PED_ID(), false);
+	}
+}
