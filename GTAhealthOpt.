@@ -1,0 +1,15 @@
+case player :
+		{
+			Menu::Title("Player Opt.");
+			if (Menu::Option("Max Health"))
+			{
+				ENTITY::SET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID(), 400);
+				PED::ADD_ARMOUR_TO_PED(PLAYER::PLAYER_PED_ID(), 200);
+			}
+			if (Menu::Option("Fix Player"))
+			{
+				PED::CLEAR_PED_BLOOD_DAMAGE(PLAYER::PLAYER_PED_ID());
+			}
+			if (Menu::Option("~r~Suicide"));
+		}  
+		break;
