@@ -1,0 +1,13 @@
+bool superjump = false;
+void SuperJump()
+{
+	if (superjump)
+	{
+		GAMEPLAY::SET_SUPER_JUMP_THIS_FRAME(PLAYER::PLAYER_PED_ID());
+		GAMEPLAY::SET_SUPER_JUMP_THIS_FRAME(PLAYER::PLAYER_ID());
+	}
+	else
+	{
+		NULL;
+	}
+}
