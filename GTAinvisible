@@ -1,0 +1,12 @@
+bool invisible = false;
+void Invisible()
+{
+	if (invisible)
+	{
+		ENTITY::SET_ENTITY_VISIBLE(PLAYER::PLAYER_PED_ID(), false, 0);
+	}
+	else
+	{
+		ENTITY::SET_ENTITY_VISIBLE(PLAYER::PLAYER_PED_ID(), true, 0);
+	}
+}
