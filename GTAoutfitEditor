@@ -1,0 +1,9 @@
+case outfit :
+		{
+			Menu::Title("Outfit Editor");
+			if (Menu::Option("Random Outfit"))
+			{
+				PED::SET_PED_RANDOM_COMPONENT_VARIATION(PLAYER::PLAYER_PED_ID(), true);
+			}
+		}
+		break;
